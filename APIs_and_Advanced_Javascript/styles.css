@@ -1,0 +1,122 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    height: 100vh;
+}
+
+.input {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0 5px;
+
+    width: 380px;
+    height: 50px;
+
+    border-radius: 10px;
+}
+input {
+    background-color: transparent;
+    font-size: 15px;
+
+    width: 60%;
+    height: 80%;
+
+    padding-left: 10px;
+
+    border: 1.5px solid rgb(193, 24, 193);
+    border-radius: 10px;
+}
+
+.search-btn {
+    background-color: rgb(193, 24, 193);
+
+    width: 25%;
+    height: 90%;
+
+    font-size: 15px;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    
+    height: fit-content;
+    width: 350px;
+
+    padding: 20px;
+    margin: 20px auto;
+
+    border: none;
+    border-radius: 30px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+}
+
+.header div {
+    margin: auto 0;
+}
+
+/* .primary-info,
+.temperature-reading {
+    margin: auto 0;
+} */
+
+.city {
+    margin-bottom: 10px;
+}
+
+.temperature-reading {
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.weather-image-container {
+    display: flex;
+    width: 100%;
+    height: 250px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.additional-info-container {
+    display: flex;
+    justify-content: space-around;
+
+    padding-top: 5px;
+    border-top: 1.2px solid #3dd1c7;
+    /* border-bottom: 1.2px solid #3dd1c7; */
+}
+
+.additional-info-container div {
+    text-align: center;
+}
+
+/* .card {
+    display: none;
+} */
