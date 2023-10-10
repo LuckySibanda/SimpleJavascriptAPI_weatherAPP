@@ -1,9 +1,8 @@
+require('dotenv').config();
 
-const apiKey = "5b0916ebabb71e57e40c90593c01754f";
-// add api key
+const apiKey = process.env.API_KEY;
 
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
-    // add url without the api key, without city name
 
 const searchBox = document.querySelector('.search-input');
 
@@ -14,29 +13,22 @@ async function checkWeather(city) {
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
     let data = await response.json();
 
+    const weatherIcon = data.weather[0].icon;
+
+    const imagesUrl = 'https://github.com/LuckySibanda/SimpleJavascriptAPI_weatherAPP/tree/ba8418715c901c5c1c0a753dbea23e3bf92cdab7/APIs_and_Advanced_Javascript/WEATHER_DISPLAY';
+
     
-    console.log(data);
 
-    if (data.weather[0].description.toLowerCase() == "scattered clouds") {
-        document.querySelector('.weather-image').src = "../conditions/fog.png";
-    }
+    const imageLoad = `${imagesUrl}${weatherIcon}.svg`;
 
-    else if (data.weather[0].description.toLowerCase() == "fog") {
-        document.querySelector('.weather-image').src = "../conditions/foggy.svg";
-    }
+    const imageElement = document.querySelector('.weather-image');
 
-    else if (data.weather[0].description.toLowerCase() == "clear sky") {
-        document.querySelector('.weather-image').src = "../conditions/moon-light.svg";
-    }
 
-    else if (data.weather[0].description.toLowerCase() == "broken clouds") {
-        document.querySelector('.weather-image').src = "../conditions/SVG/combined_weather/cloudy.svg";
-    }
+    console.log(imageLoad);
+    
+    // console.log(data);
 
-    else if (data.weather[0].description.toLowerCase() == "snow") {
-        document.querySelector('.weather-image').src = "../conditions/snow.svg";
-    }
-
+    imageElement.src = imageLoad;
 
     document.querySelector('.city').innerHTML = data.name; 
     //data is the array with objects in the json file returned by api, so data.name is an object key-value pair
