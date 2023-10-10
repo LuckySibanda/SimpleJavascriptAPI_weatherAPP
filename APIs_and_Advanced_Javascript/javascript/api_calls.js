@@ -1,6 +1,6 @@
-require('dotenv').config();
+// require('dotenv').config();
 
-const apiKey = process.env.API_KEY;
+const apiKey = "5b0916ebabb71e57e40c90593c01754f";
 
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
@@ -15,7 +15,7 @@ async function checkWeather(city) {
 
     const weatherIcon = data.weather[0].icon;
 
-    const imagesUrl = 'https://github.com/LuckySibanda/SimpleJavascriptAPI_weatherAPP/tree/ba8418715c901c5c1c0a753dbea23e3bf92cdab7/APIs_and_Advanced_Javascript/WEATHER_DISPLAY';
+    const imagesUrl = 'https://github.com/LuckySibanda/SimpleJavascriptAPI_weatherAPP/raw/main/APIs_and_Advanced_Javascript/WEATHER_DISPLAY/';
 
     
 
