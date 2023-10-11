@@ -40,10 +40,6 @@ input {
     outline: none;
 }
 
-svg {
-    fill: #3dd1c7;
-}
-
 .search-btn {
     background-color: rgb(193, 24, 193);
 
@@ -55,6 +51,8 @@ svg {
 
     border: none;
     border-radius: 10px;
+
+    cursor: pointer;
 }
 
 .card {
