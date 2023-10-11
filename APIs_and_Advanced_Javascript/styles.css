@@ -5,7 +5,8 @@
 }
 
 body {
-    background-image: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-image: linear-gradient(to left bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    /* background-image: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
     height: 100vh;
 }
 
@@ -35,6 +36,12 @@ input {
 
     border: 1.5px solid rgb(193, 24, 193);
     border-radius: 10px;
+
+    outline: none;
+}
+
+svg {
+    fill: #3dd1c7;
 }
 
 .search-btn {
@@ -63,6 +70,10 @@ input {
 
     border: none;
     border-radius: 30px;
+    /* box-shadow: 10px 10px 10px 1px; */
+    /* box-shadow: #d16ba5 0px 20px 30px -10px; */
+    /* box-shadow: #d16ba5 0px 19px 38px, #d16ba5 0px 15px 12px; */
+    box-shadow: rgb(206, 51, 123) 0px 10px 50px;
 }
 
 .header {
