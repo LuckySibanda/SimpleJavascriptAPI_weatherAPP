@@ -44,7 +44,7 @@ async function checkWeather(city) {
 
     document.querySelector('.description').innerHTML = data.weather[0].description;
 
-    // document.querySelector('.card').style = "display: block;"
+    document.querySelector('.card').style = "display: block;"
 
 }
 
