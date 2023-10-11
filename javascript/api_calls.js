@@ -15,7 +15,9 @@ async function checkWeather(city) {
 
     const weatherIcon = data.weather[0].icon;
 
-    const imagesUrl = 'https://github.com/LuckySibanda/SimpleJavascriptAPI_weatherAPP/raw/main/APIs_and_Advanced_Javascript/WEATHER_DISPLAY/';
+    const imagesUrl = 'https://github.com/LuckySibanda/SimpleJavascriptAPI_weatherAPP/raw/main/WEATHER_DISPLAY/';
+
+    
 
     
 
@@ -29,6 +31,7 @@ async function checkWeather(city) {
     // console.log(data);
 
     imageElement.src = imageLoad;
+    imageElement.alt = data.weather[0].description;
 
     document.querySelector('.city').innerHTML = data.name; 
     //data is the array with objects in the json file returned by api, so data.name is an object key-value pair
