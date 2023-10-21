@@ -186,3 +186,5 @@ input {
     width: 100%;
     margin: 100px;
 } */
+
+/* Position parent element to add footer even when weather card is display block */
